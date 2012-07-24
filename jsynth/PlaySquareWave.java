@@ -23,14 +23,6 @@ public class PlaySquareWave{
 		}
 	}
 
-	public static void main(String[] args){
-		PlaySquareWave myosc = new PlaySquareWave();
-		System.out.println("Playing C-D-E");
-		myosc.writeNote(523.25);//C
-		myosc.writeNote(587.33);//D
-		myosc.writeNote(659.26);//E
-	}
-
 	public void writeNote(double frequency) {
 		byte[] b = new byte[SAMPLE_RATE];
 		for(int i = 0; i < b.length; i++){
